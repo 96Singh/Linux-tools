@@ -1,0 +1,54 @@
+Intro:
+Screenfetch provides useful information about your computer and your operating system within a terminal window.
+
+
+Installation steps:
+
+1)Debian based distribution such as Debian itself, Ubuntu, Linux Mint, Zorin etc you can use the following command:
+$ sudo apt-get install screenfetch
+
+
+2)Fedora or CentOS
+$ yum install screenfetch
+
+3)openSUSE 
+$ zypper install screenfetch
+
+
+Starting Screenfetch:
+You can start Screenfetch within a terminal window simply by typing screenfetch
+
+When you run screenfetch you will see the logo for the operating system you are running and you will see the following information displayed:
+-Username
+-Hostname
+-Operating System
+-Kernel Version
+-Uptime
+-Number of installed packages
+-Shell version
+-Screen resolution
+-Desktop Environment
+-Window Manager
+-Window Manager Theme
+-GTK Theme
+-Icon Theme
+-Font
+-CPU
+-RAM
+
+
+Get Screenfetch information to appear every time you open a new terminal window
+
+1)Edit your bashrc file with your text editor of choice:
+
+```
+sudo nano ~/.bashrc
+```
+
+2)Use the down arrow to move to the end of the file and tyoe the following on a new blank line:
+
+```
+if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
+```
+
+3)Restart/open new session to the host
